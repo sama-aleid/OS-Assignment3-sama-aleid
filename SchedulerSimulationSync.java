@@ -39,8 +39,13 @@ class SharedResources {
     public static List<String> executionLog = new ArrayList<>(); // Shared list - NEEDS PROTECTION!
 
     // TODO #1: Add a ReentrantLock(s) here to protect critical sections
+
     // Example: public static final ReentrantLock lock = new ReentrantLock();
+    // initialize ReentrantLock and Semaphore object object
+
     public static final ReentrantLock lock = new ReentrantLock();
+    // initialize ReentrantLock and Semaphore object object
+
     // TODO #2: Add a Semaphore to limit concurrent process execution
     // Example: public static final Semaphore cpuSemaphore = new Semaphore(1);
     public static final Semaphore cpuSemaphore = new Semaphore(1);
