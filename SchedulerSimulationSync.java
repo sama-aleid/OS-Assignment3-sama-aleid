@@ -75,6 +75,7 @@ class SharedResources {
 
     // Method to add waiting time
     public static void addWaitingTime(long time) {
+        // Protect shared counters and variables using ReentrantLock critical sections"
         // TODO: Protect this critical section with a lock
         lock.lock();
         try {
